@@ -5,7 +5,7 @@ import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
-  {path: 'inicio', loadChildren: 'app/admin/inicio/inicio.module#InicioModule'}
+  {path: 'admin', loadChildren: 'app/admin/layout/layout.module#LayoutModule'}
 ];
 
 export const Routing: ModuleWithProviders = RouterModule.forRoot(routes);
