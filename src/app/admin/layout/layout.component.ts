@@ -19,9 +19,9 @@ export class LayoutComponent implements OnInit {
 
   private loadScript() {
     this.cargarJs('assets/bootstrap/js/bootstrap.min.js');
-    this.cargarJs('assets/js/app.min.js');
     this.cargarJs('assets/plugins/slimScroll/jquery.slimscroll.min.js');
     this.cargarJs('assets/plugins/fastclick/fastclick.js');
+    this.cargarJs('assets/js/app.min.js');
   }
 
   private cargarJs(js) {
@@ -32,12 +32,4 @@ export class LayoutComponent implements OnInit {
     node.charset = 'utf-8';
     document.getElementsByTagName('body')[0].appendChild(node);
   }
-
-  /*
-   <!-- SlimScroll -->
-   <script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
-   <!-- FastClick -->
-   <script src="../../plugins/fastclick/fastclick.js"></script>
-   */
-
 }
